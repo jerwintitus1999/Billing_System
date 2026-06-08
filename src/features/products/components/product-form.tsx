@@ -65,7 +65,9 @@ export function ProductForm({ product, onSubmit, onCancel, isSubmitting }: Produ
             type="number"
             step="0.01"
             placeholder="0.00"
-            {...register("price")}
+            {...register("price", {
+    valueAsNumber: true,
+  })}
             className={`w-full pl-10 pr-4 py-3 bg-slate-900 border rounded-xl text-slate-100 placeholder-slate-500 focus:outline-none transition-all ${
               errors.price ? "border-red-500/50" : "border-slate-800"
             }`}
