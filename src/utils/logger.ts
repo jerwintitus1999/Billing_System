@@ -41,55 +41,78 @@ const fileFormat = format.combine(
   format.json()
 );
 
-// Create the logger instance
-const logger: Logger = winston.createLogger({
-  level: config.env === 'development' ? 'debug' : 'info',
-  // Default format (used when no specific format is provided to transport)
-  format: fileFormat,
-  transports: [
-    // Clean console output
-    new transports.Console({
-      format: consoleFormat,
-      stderrLevels: ['error'],
-      handleExceptions: true,
-      handleRejections: true
-    }),
+// Determine environments
+const isProduction = config.env === 'production' || process.env.VERCEL === '1';
 
-    // Error log file (errors only)
+// Dynamic Transports Setup
+const activeTransports: winston.transport[] = [
+  // Clean console output (enabled in all environments)
+  new transports.Console({
+    format: consoleFormat,
+    stderrLevels: ['error'],
+    handleExceptions: true,
+    handleRejections: true
+  })
+];
+
+const exceptionHandlers: winston.transport[] = [];
+const rejectionHandlers: winston.transport[] = [];
+
+// Only add File transports in local development / non-production environments
+if (!isProduction) {
+  // Error log file (errors only)
+  activeTransports.push(
     new transports.File({
       filename: `${LOGS_DIRECTORY}/error.log`,
       level: 'error',
       maxsize: MAX_FILE_SIZE,
       maxFiles: MAX_FILES,
       format: fileFormat
-    }),
+    })
+  );
 
-    // Combined log file (all levels)
+  // Combined log file (all levels)
+  activeTransports.push(
     new transports.File({
       filename: `${LOGS_DIRECTORY}/combined.log`,
       maxsize: MAX_FILE_SIZE,
       maxFiles: MAX_FILES,
       format: fileFormat
     })
-  ],
-  exceptionHandlers: [
+  );
+
+  // Exceptions File transport
+  exceptionHandlers.push(
     new transports.File({ 
       filename: `${LOGS_DIRECTORY}/exceptions.log`,
       format: fileFormat
     })
-  ],
-  rejectionHandlers: [
+  );
+
+  // Rejections File transport
+  rejectionHandlers.push(
     new transports.File({ 
       filename: `${LOGS_DIRECTORY}/rejections.log`,
       format: fileFormat
     })
-  ],
+  );
+}
+
+// Create the logger instance
+const logger: Logger = winston.createLogger({
+  level: config.env === 'development' ? 'debug' : 'info',
+  format: fileFormat,
+  transports: activeTransports,
+  exceptionHandlers: exceptionHandlers.length > 0 ? exceptionHandlers : undefined,
+  rejectionHandlers: rejectionHandlers.length > 0 ? rejectionHandlers : undefined,
   exitOnError: false
 });
 
 // Add debug console logging in non-production environments
-if (config.env !== 'production') {
-  logger.debug('Logger initialized in development mode');
+if (!isProduction) {
+  logger.debug('Logger initialized in development mode with file transports');
+} else {
+  logger.info('Logger initialized in production mode with console transport only');
 }
 
 export default logger;

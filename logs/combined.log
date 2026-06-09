@@ -283,3 +283,13 @@
 {"level":"info","message":"HTTP server closed","timestamp":"2026-06-08 23:21:08"}
 {"level":"info","message":"Socket.IO server closed","timestamp":"2026-06-08 23:21:08"}
 {"level":"info","message":"MongoDB connection closed","timestamp":"2026-06-08 23:21:09"}
+{"level":"debug","message":"Logger initialized in development mode","timestamp":"2026-06-09 16:11:36"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-09 16:11:40"}
+{"level":"debug","message":"Logger initialized in development mode with file transports","timestamp":"2026-06-09 16:13:35"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-09 16:13:38"}
+{"level":"debug","message":"Logger initialized in development mode with file transports","timestamp":"2026-06-09 16:16:43"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-09 16:16:47"}
+{"level":"debug","message":"Logger initialized in development mode with file transports","timestamp":"2026-06-09 16:17:05"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-09 16:17:08"}
+{"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-09 16:17:08"}
+{"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-09 16:17:08"}
