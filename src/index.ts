@@ -1,4 +1,4 @@
-import { createApp } from "./app";
+import app, { server, io as socketIO } from "./app";
 import logger from "./utils/logger";
 import mongoose from "mongoose";
 import { Server } from "http";
@@ -6,31 +6,22 @@ import { Server as SocketIOServer } from "socket.io";
 import envConfig from "./config/env";
 
 const port = envConfig.port || 4000;
-const MONGODB_URI = envConfig.mongoose.url;
 
 let serverInstance: Server | null = null;
-let io: SocketIOServer | null = null;
+let ioInstance: SocketIOServer | null = null;
 let serverStarted = false;
 
-mongoose
-  .connect(MONGODB_URI)
-  .then(() => {
-    logger.info("Connected to MongoDB");
-
-    if (!serverStarted) {
-      const { server, io: socketIO } = createApp();
-      io = socketIO;
-      serverInstance = server.listen(port, () => {
-        serverStarted = true;
-        logger.info("Socket.IO server initialized");
-        logger.info(`Server is running on port ${port}`);
-      });
-    }
-  })
-  .catch((error) => {
-    logger.error("Error connecting to MongoDB:", error);
-    process.exit(1);
-  });
+// Wait for database connection to open before listening on local port
+mongoose.connection.once("open", () => {
+  if (!serverStarted) {
+    ioInstance = socketIO;
+    serverInstance = server.listen(port, () => {
+      serverStarted = true;
+      logger.info("Socket.IO server initialized");
+      logger.info(`Server is running on port ${port}`);
+    });
+  }
+});
 
 const gracefulShutdown = async () => {
   try {
@@ -43,9 +34,9 @@ const gracefulShutdown = async () => {
       });
     }
 
-    if (io) {
+    if (ioInstance) {
       await new Promise<void>((resolve) => {
-        io?.close(() => {
+        ioInstance?.close(() => {
           logger.info("Socket.IO server closed");
           resolve();
         });

@@ -293,3 +293,7 @@
 {"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-09 16:17:08"}
 {"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-09 16:17:08"}
 {"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-09 16:17:08"}
+{"level":"debug","message":"Logger initialized in development mode with file transports","timestamp":"2026-06-09 16:23:37"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-09 16:23:40"}
+{"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-09 16:23:40"}
+{"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-09 16:23:40"}
