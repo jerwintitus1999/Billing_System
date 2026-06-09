@@ -1,12 +1,23 @@
-import express from "express";
+import { Router } from "express";
+import { Controller } from "./controller";
+import { validateSchema } from "../middleware/validators";
+import { Validation } from "./payload";
 
-import * as controller
-from "./controller";
+const router = Router();
+const controller = new Controller();
 
-const router = express.Router();
+router.route("/")
+  .post(validateSchema({ body: Validation.body }), controller.createProduct);
 
-router.post("/", controller.)
+router.route("/get-all")
+  .get(controller.getAllProducts);
 
-router.get("/get-all",controller.getAllProducts);
+router.route("/:id")
+  .get(validateSchema({ params: Validation.queryId }), controller.getProductById)
+  .put(validateSchema({ params: Validation.queryId, body: Validation.update }), controller.updateProduct)
+  .delete(validateSchema({ params: Validation.queryId }), controller.deleteProduct);
+
+router.route("/:id/price-history")
+  .get(validateSchema({ params: Validation.queryId }), controller.getPriceHistory);
 
 export default router;

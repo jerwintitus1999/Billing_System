@@ -78,3 +78,208 @@
 {"level":"warn","message":"TSError: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n\n    at createTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:859:12)\n    at reportTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:863:19)\n    at getOutput (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1077:36)\n    at Object.compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1433:41)\n    at Module.m._compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1617:30)\n    at node:internal/modules/cjs/loader:1699:10\n    at Object.require.extensions.<computed> [as .ts] (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1621:12)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)","timestamp":"2026-06-08 18:18:40"}
 {"level":"info","message":"SIGINT received","timestamp":"2026-06-08 18:18:48"}
 {"errorLabelSet":{},"level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{"ac-moeilpe-shard-00-00.nx3vnqz.mongodb.net:27017":{"$clusterTime":null,"address":"ac-moeilpe-shard-00-00.nx3vnqz.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":34208930,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-moeilpe-shard-00-01.nx3vnqz.mongodb.net:27017":{"$clusterTime":null,"address":"ac-moeilpe-shard-00-01.nx3vnqz.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":34208930,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-moeilpe-shard-00-02.nx3vnqz.mongodb.net:27017":{"$clusterTime":null,"address":"ac-moeilpe-shard-00-02.nx3vnqz.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":34208930,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":"atlas-v1h1a3-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"stack":"MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/\n    at _handleConnectionErrors (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/mongoose/lib/connection.js:1154:11)\n    at NativeConnection.openUri (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/mongoose/lib/connection.js:1085:11)","timestamp":"2026-06-08 18:19:10"}
+{"level":"debug","message":"Logger initialized in development mode","timestamp":"2026-06-08 18:35:56"}
+{"level":"warn","message":"Error loading route at /Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/src/products/route.ts: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n","timestamp":"2026-06-08 18:35:59"}
+{"level":"warn","message":"TSError: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n\n    at createTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:859:12)\n    at reportTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:863:19)\n    at getOutput (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1077:36)\n    at Object.compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1433:41)\n    at Module.m._compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1617:30)\n    at node:internal/modules/cjs/loader:1699:10\n    at Object.require.extensions.<computed> [as .ts] (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1621:12)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)","timestamp":"2026-06-08 18:35:59"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-08 18:35:59"}
+{"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-08 18:35:59"}
+{"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-08 18:35:59"}
+{"level":"debug","message":"Logger initialized in development mode","timestamp":"2026-06-08 18:38:42"}
+{"level":"warn","message":"Error loading route at /Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/src/products/route.ts: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n","timestamp":"2026-06-08 18:38:44"}
+{"level":"warn","message":"TSError: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n\n    at createTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:859:12)\n    at reportTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:863:19)\n    at getOutput (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1077:36)\n    at Object.compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1433:41)\n    at Module.m._compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1617:30)\n    at node:internal/modules/cjs/loader:1699:10\n    at Object.require.extensions.<computed> [as .ts] (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1621:12)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)","timestamp":"2026-06-08 18:38:45"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-08 18:38:45"}
+{"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-08 18:38:45"}
+{"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-08 18:38:45"}
+{"level":"debug","message":"Logger initialized in development mode","timestamp":"2026-06-08 18:38:46"}
+{"level":"warn","message":"Error loading route at /Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/src/products/route.ts: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n","timestamp":"2026-06-08 18:38:49"}
+{"level":"warn","message":"TSError: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n\n    at createTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:859:12)\n    at reportTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:863:19)\n    at getOutput (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1077:36)\n    at Object.compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1433:41)\n    at Module.m._compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1617:30)\n    at node:internal/modules/cjs/loader:1699:10\n    at Object.require.extensions.<computed> [as .ts] (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1621:12)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)","timestamp":"2026-06-08 18:38:49"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-08 18:38:49"}
+{"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-08 18:38:49"}
+{"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-08 18:38:49"}
+{"level":"debug","message":"Logger initialized in development mode","timestamp":"2026-06-08 18:38:51"}
+{"level":"warn","message":"Error loading route at /Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/src/products/route.ts: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n","timestamp":"2026-06-08 18:38:54"}
+{"level":"warn","message":"TSError: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n\n    at createTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:859:12)\n    at reportTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:863:19)\n    at getOutput (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1077:36)\n    at Object.compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1433:41)\n    at Module.m._compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1617:30)\n    at node:internal/modules/cjs/loader:1699:10\n    at Object.require.extensions.<computed> [as .ts] (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1621:12)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)","timestamp":"2026-06-08 18:38:54"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-08 18:38:54"}
+{"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-08 18:38:54"}
+{"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-08 18:38:54"}
+{"level":"debug","message":"Logger initialized in development mode","timestamp":"2026-06-08 18:38:57"}
+{"level":"warn","message":"Error loading route at /Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/src/products/route.ts: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n","timestamp":"2026-06-08 18:38:59"}
+{"level":"warn","message":"TSError: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n\n    at createTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:859:12)\n    at reportTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:863:19)\n    at getOutput (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1077:36)\n    at Object.compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1433:41)\n    at Module.m._compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1617:30)\n    at node:internal/modules/cjs/loader:1699:10\n    at Object.require.extensions.<computed> [as .ts] (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1621:12)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)","timestamp":"2026-06-08 18:38:59"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-08 18:38:59"}
+{"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-08 18:38:59"}
+{"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-08 18:38:59"}
+{"level":"debug","message":"Logger initialized in development mode","timestamp":"2026-06-08 18:39:06"}
+{"level":"warn","message":"Error loading route at /Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/src/products/route.ts: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n","timestamp":"2026-06-08 18:39:08"}
+{"level":"warn","message":"TSError: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n\n    at createTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:859:12)\n    at reportTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:863:19)\n    at getOutput (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1077:36)\n    at Object.compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1433:41)\n    at Module.m._compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1617:30)\n    at node:internal/modules/cjs/loader:1699:10\n    at Object.require.extensions.<computed> [as .ts] (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1621:12)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)","timestamp":"2026-06-08 18:39:08"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-08 18:39:08"}
+{"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-08 18:39:08"}
+{"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-08 18:39:08"}
+{"level":"debug","message":"Logger initialized in development mode","timestamp":"2026-06-08 18:39:11"}
+{"level":"warn","message":"Error loading route at /Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/src/products/route.ts: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:10:34 - error TS2339: Property 'getAllProducts' does not exist on type 'typeof import(\"/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/src/products/controller\")'.\n\n10 router.get(\"/get-all\",controller.getAllProducts);\n                                    ~~~~~~~~~~~~~~\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n","timestamp":"2026-06-08 18:39:13"}
+{"level":"warn","message":"TSError: ⨯ Unable to compile TypeScript:\nsrc/products/route.ts:10:34 - error TS2339: Property 'getAllProducts' does not exist on type 'typeof import(\"/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/src/products/controller\")'.\n\n10 router.get(\"/get-all\",controller.getAllProducts);\n                                    ~~~~~~~~~~~~~~\nsrc/products/route.ts:8:29 - error TS1003: Identifier expected.\n\n8 router.post(\"/\", controller.)\n                              ~\n\n    at createTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:859:12)\n    at reportTSError (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:863:19)\n    at getOutput (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1077:36)\n    at Object.compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1433:41)\n    at Module.m._compile (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1617:30)\n    at node:internal/modules/cjs/loader:1699:10\n    at Object.require.extensions.<computed> [as .ts] (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/node_modules/ts-node/src/index.ts:1621:12)\n    at Module.load (node:internal/modules/cjs/loader:1313:32)\n    at Function._load (node:internal/modules/cjs/loader:1123:12)\n    at TracingChannel.traceSync (node:diagnostics_channel:322:14)","timestamp":"2026-06-08 18:39:13"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-08 18:39:14"}
+{"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-08 18:39:14"}
+{"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-08 18:39:14"}
+{"level":"debug","message":"Logger initialized in development mode","timestamp":"2026-06-08 18:39:17"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-08 18:39:20"}
+{"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-08 18:39:20"}
+{"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-08 18:39:20"}
+{"level":"debug","message":"Logger initialized in development mode","timestamp":"2026-06-08 18:43:50"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-08 18:43:53"}
+{"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-08 18:43:53"}
+{"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-08 18:43:53"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 236.643 ms","timestamp":"2026-06-08 19:33:09"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.748 ms","timestamp":"2026-06-08 19:34:38"}
+{"level":"info","message":"POST /v1/products 201 - 117.843 ms","timestamp":"2026-06-08 19:34:38"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 29.380 ms","timestamp":"2026-06-08 19:34:38"}
+{"level":"info","message":"GET /v1/products/get-all 304 - 36.273 ms","timestamp":"2026-06-08 19:34:47"}
+{"level":"info","message":"GET /v1/products/d9a9876a-75c0-4fa9-b988-81eb88424d08/price-history 200 - 40.693 ms","timestamp":"2026-06-08 19:35:00"}
+{"level":"debug","message":"Logger initialized in development mode","timestamp":"2026-06-08 19:39:12"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-08 19:39:15"}
+{"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-08 19:39:15"}
+{"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-08 19:39:15"}
+{"level":"debug","message":"Logger initialized in development mode","timestamp":"2026-06-08 19:39:19"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-08 19:39:22"}
+{"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-08 19:39:22"}
+{"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-08 19:39:22"}
+{"level":"info","message":"GET /v1/products/d9a9876a-75c0-4fa9-b988-81eb88424d08/price-history 304 - 118.202 ms","timestamp":"2026-06-08 19:40:18"}
+{"level":"info","message":"OPTIONS /v1/products/d9a9876a-75c0-4fa9-b988-81eb88424d08 204 - 0.672 ms","timestamp":"2026-06-08 19:40:51"}
+{"level":"info","message":"PUT /v1/products/d9a9876a-75c0-4fa9-b988-81eb88424d08 200 - 89.957 ms","timestamp":"2026-06-08 19:40:51"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 31.295 ms","timestamp":"2026-06-08 19:40:51"}
+{"level":"info","message":"GET /v1/products/d9a9876a-75c0-4fa9-b988-81eb88424d08/price-history 200 - 32.434 ms","timestamp":"2026-06-08 19:41:05"}
+{"level":"info","message":"GET /v1/products/d9a9876a-75c0-4fa9-b988-81eb88424d08/price-history 304 - 239.509 ms","timestamp":"2026-06-08 19:55:02"}
+{"level":"info","message":"OPTIONS /v1/products/d9a9876a-75c0-4fa9-b988-81eb88424d08 204 - 0.339 ms","timestamp":"2026-06-08 19:55:26"}
+{"level":"info","message":"PUT /v1/products/d9a9876a-75c0-4fa9-b988-81eb88424d08 200 - 81.010 ms","timestamp":"2026-06-08 19:55:26"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 39.302 ms","timestamp":"2026-06-08 19:55:26"}
+{"level":"info","message":"GET /v1/products/d9a9876a-75c0-4fa9-b988-81eb88424d08/price-history 200 - 33.237 ms","timestamp":"2026-06-08 19:55:31"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 108.210 ms","timestamp":"2026-06-08 19:57:07"}
+{"level":"info","message":"GET /v1/products/d9a9876a-75c0-4fa9-b988-81eb88424d08/price-history 200 - 36.127 ms","timestamp":"2026-06-08 19:57:09"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.349 ms","timestamp":"2026-06-08 19:58:26"}
+{"level":"info","message":"POST /v1/products 201 - 104.065 ms","timestamp":"2026-06-08 19:58:26"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 27.169 ms","timestamp":"2026-06-08 19:58:27"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.197 ms","timestamp":"2026-06-08 19:59:15"}
+{"level":"info","message":"POST /v1/products 201 - 61.177 ms","timestamp":"2026-06-08 19:59:15"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 37.888 ms","timestamp":"2026-06-08 19:59:15"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.427 ms","timestamp":"2026-06-08 20:00:46"}
+{"level":"info","message":"POST /v1/products 201 - 74.494 ms","timestamp":"2026-06-08 20:00:46"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 28.784 ms","timestamp":"2026-06-08 20:00:46"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.639 ms","timestamp":"2026-06-08 20:07:31"}
+{"level":"info","message":"POST /v1/products 201 - 253.188 ms","timestamp":"2026-06-08 20:07:31"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 33.270 ms","timestamp":"2026-06-08 20:07:32"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.142 ms","timestamp":"2026-06-08 20:08:31"}
+{"level":"info","message":"POST /v1/products 201 - 64.749 ms","timestamp":"2026-06-08 20:08:31"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 29.328 ms","timestamp":"2026-06-08 20:08:31"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.101 ms","timestamp":"2026-06-08 20:09:15"}
+{"level":"info","message":"POST /v1/products 201 - 64.358 ms","timestamp":"2026-06-08 20:09:15"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 31.068 ms","timestamp":"2026-06-08 20:09:15"}
+{"level":"info","message":"OPTIONS /v1/products/76a6a083-0d26-4ff1-81af-05047dc58212 204 - 0.348 ms","timestamp":"2026-06-08 20:09:35"}
+{"level":"info","message":"PUT /v1/products/76a6a083-0d26-4ff1-81af-05047dc58212 200 - 106.654 ms","timestamp":"2026-06-08 20:09:35"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 29.106 ms","timestamp":"2026-06-08 20:09:35"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.166 ms","timestamp":"2026-06-08 20:10:25"}
+{"level":"info","message":"POST /v1/products 201 - 66.205 ms","timestamp":"2026-06-08 20:10:25"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 30.461 ms","timestamp":"2026-06-08 20:10:25"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.187 ms","timestamp":"2026-06-08 21:53:14"}
+{"level":"info","message":"POST /v1/products 201 - 327.618 ms","timestamp":"2026-06-08 21:53:14"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 28.727 ms","timestamp":"2026-06-08 21:53:14"}
+{"level":"info","message":"GET /v1/products/d9a9876a-75c0-4fa9-b988-81eb88424d08/price-history 304 - 34.330 ms","timestamp":"2026-06-08 21:53:29"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.095 ms","timestamp":"2026-06-08 21:54:21"}
+{"level":"info","message":"POST /v1/products 201 - 66.151 ms","timestamp":"2026-06-08 21:54:21"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 30.659 ms","timestamp":"2026-06-08 21:54:21"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.153 ms","timestamp":"2026-06-08 21:54:53"}
+{"level":"info","message":"POST /v1/products 201 - 61.903 ms","timestamp":"2026-06-08 21:54:54"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 28.101 ms","timestamp":"2026-06-08 21:54:54"}
+{"level":"info","message":"OPTIONS /v1/products/5e0429d8-99c2-47f6-a1c0-69e435e26001 204 - 0.155 ms","timestamp":"2026-06-08 21:55:10"}
+{"level":"info","message":"PUT /v1/products/5e0429d8-99c2-47f6-a1c0-69e435e26001 200 - 141.587 ms","timestamp":"2026-06-08 21:55:10"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 43.657 ms","timestamp":"2026-06-08 21:55:10"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.116 ms","timestamp":"2026-06-08 21:55:23"}
+{"level":"error","message":"CustomError: Error: Product with this name already exists\n    at Service.createProduct (/Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/src/products/service.ts:22:13)\n    at processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async /Users/barathkumar/Desktop/Jerwin/Billing_system/Backend/src/products/controller.ts:13:18","timestamp":"2026-06-08 21:55:23"}
+{"level":"error","message":"POST /v1/products 400 - 42.495 ms - message: Product with this name already exists","timestamp":"2026-06-08 21:55:23"}
+{"level":"info","message":"POST /v1/products 201 - 71.680 ms","timestamp":"2026-06-08 21:55:28"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 29.438 ms","timestamp":"2026-06-08 21:55:28"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.287 ms","timestamp":"2026-06-08 21:55:48"}
+{"level":"info","message":"POST /v1/products 201 - 91.543 ms","timestamp":"2026-06-08 21:55:48"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 30.717 ms","timestamp":"2026-06-08 21:55:48"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.080 ms","timestamp":"2026-06-08 21:56:28"}
+{"level":"info","message":"POST /v1/products 201 - 88.651 ms","timestamp":"2026-06-08 21:56:28"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 42.802 ms","timestamp":"2026-06-08 21:56:28"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.113 ms","timestamp":"2026-06-08 21:57:24"}
+{"level":"info","message":"POST /v1/products 201 - 64.278 ms","timestamp":"2026-06-08 21:57:25"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 29.085 ms","timestamp":"2026-06-08 21:57:25"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.329 ms","timestamp":"2026-06-08 21:57:56"}
+{"level":"info","message":"POST /v1/products 201 - 163.752 ms","timestamp":"2026-06-08 21:57:57"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 59.695 ms","timestamp":"2026-06-08 21:57:57"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.171 ms","timestamp":"2026-06-08 21:59:31"}
+{"level":"info","message":"POST /v1/products 201 - 65.740 ms","timestamp":"2026-06-08 21:59:31"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 30.286 ms","timestamp":"2026-06-08 21:59:31"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.139 ms","timestamp":"2026-06-08 22:02:07"}
+{"level":"info","message":"POST /v1/products 201 - 79.793 ms","timestamp":"2026-06-08 22:02:07"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 37.791 ms","timestamp":"2026-06-08 22:02:07"}
+{"level":"info","message":"OPTIONS /v1/products/82d2fd38-8ba3-4761-8783-388fe5c8443d 204 - 0.109 ms","timestamp":"2026-06-08 22:02:23"}
+{"level":"info","message":"PUT /v1/products/82d2fd38-8ba3-4761-8783-388fe5c8443d 200 - 69.029 ms","timestamp":"2026-06-08 22:02:23"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 32.938 ms","timestamp":"2026-06-08 22:02:23"}
+{"level":"info","message":"GET /v1/products/82d2fd38-8ba3-4761-8783-388fe5c8443d/price-history 200 - 52.855 ms","timestamp":"2026-06-08 22:02:25"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.080 ms","timestamp":"2026-06-08 22:03:33"}
+{"level":"info","message":"POST /v1/products 201 - 59.843 ms","timestamp":"2026-06-08 22:03:33"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 28.605 ms","timestamp":"2026-06-08 22:03:33"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.084 ms","timestamp":"2026-06-08 22:03:52"}
+{"level":"info","message":"POST /v1/products 201 - 60.597 ms","timestamp":"2026-06-08 22:03:52"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 31.368 ms","timestamp":"2026-06-08 22:03:52"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 2.250 ms","timestamp":"2026-06-08 22:04:25"}
+{"level":"info","message":"POST /v1/products 201 - 100.580 ms","timestamp":"2026-06-08 22:04:25"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 28.102 ms","timestamp":"2026-06-08 22:04:25"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.090 ms","timestamp":"2026-06-08 22:05:04"}
+{"level":"info","message":"POST /v1/products 201 - 63.186 ms","timestamp":"2026-06-08 22:05:04"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 29.307 ms","timestamp":"2026-06-08 22:05:04"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.103 ms","timestamp":"2026-06-08 22:05:40"}
+{"level":"info","message":"POST /v1/products 201 - 69.507 ms","timestamp":"2026-06-08 22:05:41"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 28.542 ms","timestamp":"2026-06-08 22:05:41"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.322 ms","timestamp":"2026-06-08 22:07:01"}
+{"level":"info","message":"POST /v1/products 201 - 75.427 ms","timestamp":"2026-06-08 22:07:01"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 27.613 ms","timestamp":"2026-06-08 22:07:01"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.147 ms","timestamp":"2026-06-08 22:07:35"}
+{"level":"info","message":"POST /v1/products 201 - 62.352 ms","timestamp":"2026-06-08 22:07:35"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 30.209 ms","timestamp":"2026-06-08 22:07:35"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.125 ms","timestamp":"2026-06-08 22:08:49"}
+{"level":"info","message":"POST /v1/products 201 - 60.810 ms","timestamp":"2026-06-08 22:08:49"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 34.430 ms","timestamp":"2026-06-08 22:08:49"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.081 ms","timestamp":"2026-06-08 22:09:10"}
+{"level":"info","message":"POST /v1/products 201 - 69.262 ms","timestamp":"2026-06-08 22:09:10"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 30.704 ms","timestamp":"2026-06-08 22:09:10"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.083 ms","timestamp":"2026-06-08 22:09:45"}
+{"level":"info","message":"POST /v1/products 201 - 72.247 ms","timestamp":"2026-06-08 22:09:45"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 31.340 ms","timestamp":"2026-06-08 22:09:45"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.171 ms","timestamp":"2026-06-08 22:10:00"}
+{"level":"info","message":"POST /v1/products 201 - 59.506 ms","timestamp":"2026-06-08 22:10:00"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 29.875 ms","timestamp":"2026-06-08 22:10:00"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.082 ms","timestamp":"2026-06-08 22:10:36"}
+{"level":"info","message":"POST /v1/products 201 - 63.240 ms","timestamp":"2026-06-08 22:10:36"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 29.083 ms","timestamp":"2026-06-08 22:10:36"}
+{"level":"info","message":"GET /v1/products/d9a9876a-75c0-4fa9-b988-81eb88424d08/price-history 304 - 30.238 ms","timestamp":"2026-06-08 22:10:54"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.253 ms","timestamp":"2026-06-08 22:12:06"}
+{"level":"info","message":"POST /v1/products 201 - 71.091 ms","timestamp":"2026-06-08 22:12:06"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 28.660 ms","timestamp":"2026-06-08 22:12:06"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.100 ms","timestamp":"2026-06-08 22:12:43"}
+{"level":"info","message":"POST /v1/products 201 - 60.016 ms","timestamp":"2026-06-08 22:12:43"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 30.431 ms","timestamp":"2026-06-08 22:12:43"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.083 ms","timestamp":"2026-06-08 22:13:06"}
+{"level":"info","message":"POST /v1/products 201 - 63.133 ms","timestamp":"2026-06-08 22:13:06"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 32.147 ms","timestamp":"2026-06-08 22:13:06"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.143 ms","timestamp":"2026-06-08 22:14:07"}
+{"level":"info","message":"POST /v1/products 201 - 68.882 ms","timestamp":"2026-06-08 22:14:07"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 31.550 ms","timestamp":"2026-06-08 22:14:07"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.092 ms","timestamp":"2026-06-08 22:14:45"}
+{"level":"info","message":"POST /v1/products 201 - 60.797 ms","timestamp":"2026-06-08 22:14:45"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 30.646 ms","timestamp":"2026-06-08 22:14:45"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.081 ms","timestamp":"2026-06-08 22:15:06"}
+{"level":"info","message":"POST /v1/products 201 - 61.915 ms","timestamp":"2026-06-08 22:15:06"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 29.886 ms","timestamp":"2026-06-08 22:15:06"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.081 ms","timestamp":"2026-06-08 22:15:28"}
+{"level":"info","message":"POST /v1/products 201 - 60.499 ms","timestamp":"2026-06-08 22:15:28"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 47.763 ms","timestamp":"2026-06-08 22:15:28"}
+{"level":"info","message":"OPTIONS /v1/products 204 - 0.086 ms","timestamp":"2026-06-08 22:15:48"}
+{"level":"info","message":"POST /v1/products 201 - 65.681 ms","timestamp":"2026-06-08 22:15:48"}
+{"level":"info","message":"GET /v1/products/get-all 200 - 30.673 ms","timestamp":"2026-06-08 22:15:48"}
+{"level":"info","message":"SIGINT received","timestamp":"2026-06-08 23:21:08"}
+{"level":"info","message":"HTTP server closed","timestamp":"2026-06-08 23:21:08"}
+{"level":"info","message":"Socket.IO server closed","timestamp":"2026-06-08 23:21:08"}
+{"level":"info","message":"MongoDB connection closed","timestamp":"2026-06-08 23:21:09"}
