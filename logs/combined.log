@@ -297,3 +297,12 @@
 {"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-09 16:23:40"}
 {"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-09 16:23:40"}
 {"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-09 16:23:40"}
+{"level":"debug","message":"Logger initialized in development mode with file transports","timestamp":"2026-06-09 16:32:57"}
+{"level":"info","message":"Connected to MongoDB","timestamp":"2026-06-09 16:33:00"}
+{"level":"info","message":"Socket.IO server initialized","timestamp":"2026-06-09 16:33:00"}
+{"level":"info","message":"Server is running on port 5001","timestamp":"2026-06-09 16:33:00"}
+{"level":"info","message":"GET /v1/products/get-all 304 - 52.754 ms","timestamp":"2026-06-09 16:39:26"}
+{"level":"info","message":"GET /v1/products/get-all 304 - 42.698 ms","timestamp":"2026-06-09 16:43:19"}
+{"level":"info","message":"GET /v1/products/get-all 304 - 78.774 ms","timestamp":"2026-06-09 16:44:20"}
+{"level":"info","message":"GET /v1/products/get-all 304 - 35.960 ms","timestamp":"2026-06-09 16:44:21"}
+{"level":"info","message":"GET /favicon.ico 200 - 1.888 ms","timestamp":"2026-06-09 16:44:21"}
